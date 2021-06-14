@@ -8,8 +8,8 @@
   * Installing Django
     * `python3 -m pip install Django`
     * Check version `python3 -m django --version`
-3. Some boilerplate text goes here
-4. Some boilerplate text goes here
+* Some boilerplate text goes here
+* Some boilerplate text goes here
 
 ### React
-1. Some boilerplate text goes here
+* Setting up project 
