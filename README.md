@@ -26,8 +26,8 @@
 
 ### Postgres
 * **Setting up postgres**
-  * Install postgres
-    * `pip3 install psycopg2`
+  * Install postgres `pip3 install psycopg2 psycopg2-binary postgresql`
+  * Connect to posgres using premade 'postgres' role `sudo -i -u postgres`
 
 
 ### React
