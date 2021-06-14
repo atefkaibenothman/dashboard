@@ -22,6 +22,13 @@
 
 * **Order of operations**
   * client -> project urls.py -> app urls.py -> app views.py
+  
+
+### Postgres
+* **Setting up postgres**
+  * Install postgres
+    * `pip3 install psycopg2`
+
 
 ### React
 * Setting up project 
