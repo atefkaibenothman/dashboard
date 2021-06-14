@@ -4,7 +4,7 @@
 ## Notes
 
 ### Django
-* Setting up project 
+* **Setting up project**
   * Create virtual environment
     * Install virtualenv `pip3 install virtualenv`
     * Create a virtual env `python3 -m venv venv`
@@ -17,10 +17,10 @@
   * Create an app
     * `python3 manage.py startapp [APP_NAME]`
 
-* Running project
+* **Running project**
   * `python3 manage.py runserver`
 
-* Order of operations
+* **Order of operations**
   * client -> project urls.py -> app urls.py -> app views.py
 
 ### React
