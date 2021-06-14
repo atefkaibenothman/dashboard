@@ -14,6 +14,14 @@
     * Check version `python3 -m django --version`
   * Creating a project
     * `django-admin startproject [PROJECT_NAME]`
+  * Create an app
+    * `python3 manage.py startapp [APP_NAME]`
+
+* Running project
+  * `python3 manage.py runserver`
+
+* Order of operations
+  * client -> project urls.py -> app urls.py -> app views.py
 
 ### React
 * Setting up project 
