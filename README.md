@@ -20,6 +20,9 @@
 * **Running project**
   * `python3 manage.py runserver`
 
+* **Migrations**
+  * `python3 manage.py migrate`
+
 * **Order of operations**
   * client -> project urls.py -> app urls.py -> app views.py
   
@@ -28,6 +31,11 @@
 * **Setting up postgres**
   * Install postgres `pip3 install psycopg2 psycopg2-binary postgresql`
   * Connect to posgres using premade 'postgres' role `sudo -i -u postgres`
+
+* **Commands**
+  * show databases `\l`
+  * choose database `\c [DB_NAME]`
+  * show tables `\dt`
 
 
 ### React
