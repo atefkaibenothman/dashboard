@@ -26,6 +26,8 @@
 * **Order of operations**
   * client -> project urls.py -> app urls.py -> app views.py
   
+* **Models**
+    *
 
 ### Postgres
 * **Setting up postgres**
