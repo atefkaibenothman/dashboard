@@ -1,3 +1,9 @@
 *.DS_Store
 __pycache__/
 venv/
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+node_modules
+bower_components
