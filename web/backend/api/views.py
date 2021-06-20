@@ -5,12 +5,9 @@ from rest_framework import viewsets
 from .serializers import ActorSerializer
 from .models import Actor
 
-def index(request):
-    return HttpResponse("Hello, you're at the base index.")
-
 class ActorView(viewsets.ModelViewSet):
     """
-    API endpoint that allows users to be viewed or edited
+    API endpoint that allows actors to be viewed or edited
     """
     serializer_class = ActorSerializer
     queryset = Actor.objects.all()
