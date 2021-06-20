@@ -42,3 +42,9 @@
 
 ### React
 * Setting up project 
+  * Create new django app for frontend
+  * Initialize package.json `npm init -y`
+  * Initialize webpack
+    * JS module bundler
+  * Initialize babel
+    * Used to convert ECMAScript into a backwards compatible version of JS
