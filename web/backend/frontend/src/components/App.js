@@ -12,7 +12,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("api/actors")
+    var apiURL = "http://localhost:8000/api/films"
+    fetch(apiURL)
       .then(response => {
         if (response.status > 400) {
           return this.setState(() => {
@@ -36,8 +37,8 @@ class App extends Component {
       <ul>
       {this.state.data.map(actor => {
         return (
-          <li key={actor.id}>
-            {actor.last_name}, {actor.first_name}
+          <li key={actor.film_id}>
+            {actor.title}: {actor.release_year}, {actor.rating}
           </li>
         );
       })}

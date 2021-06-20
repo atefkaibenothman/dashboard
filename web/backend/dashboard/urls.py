@@ -9,7 +9,7 @@ router.register(r"actors", ActorView, "actor")
 router.register(r"films", FilmView, "film")
 
 urlpatterns = [
-    path("", include("frontend.urls")),
     path("admin/", admin.site.urls),
     path("api/", include(router.urls)),
+    path("dashboard/", include("frontend.urls")),
 ]
