@@ -23,6 +23,7 @@ router.register(r"actors", views.ActorView, "actor")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path(route="base/", view=include("base.urls")),
     path("api/", include(router.urls)),
+    path(route="base/", view=include("base.urls")),
+    path("", include("frontend.urls")),
 ]
