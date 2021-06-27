@@ -25,9 +25,13 @@
 
 * **Order of operations**
   * client -> project urls.py -> app urls.py -> app views.py
-  
-* **Models**
-    *
+
+
+### Graphene-Django
+* **Setting up graphene**
+  * Install `pip3 install graphene-django`
+  * Add `graphene_django` into installed apps in project
+
 
 ### Postgres
 * **Setting up postgres**
