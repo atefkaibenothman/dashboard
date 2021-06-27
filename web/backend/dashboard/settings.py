@@ -37,10 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
-    'rest_framework',
-    'api',
-    'frontend',
+    'corsheaders', # Corsheaders
+    'rest_framework', # Django-Rest-Framework
+    'graphene_django', # Graphene-Django
+    'api', # App
+    'frontend', # App
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_WHITELIST = [
             'http://localhost:3000'
         ]
+
+# Graphene-Django
+GRAPHENE = {
+        'SCHEMA': 'api.schema.schema'
+        }
