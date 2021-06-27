@@ -11,6 +11,6 @@ router.register(r"films", FilmView, "film")
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/", include(router.urls)), # using django rest framework
-    path("dashboard/", include("frontend.urls")),
     path("graphql/", include("api.urls")), # using graphene (graphql)
+    path("dashboard/", include("frontend.urls")),
 ]

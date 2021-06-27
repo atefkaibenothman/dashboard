@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import Actors from "./Actors"
 
-class App extends Component {
+class Actors extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,15 +12,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h3>Dashboard</h3>
-        <Actors />
+        <h4>Actors</h4>
       </div>
     );
   }
 
 }
 
-export default App;
-
-const container = document.getElementById("app");
-render(<App/>, container);
+export default Actors;
