@@ -1,20 +1,22 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import { ApolloClient, InMemoryCache, ApolloProvider, useQuery, gql } from "@apollo/client"
+
+// Components
 import Actors from "./Actors"
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: [],
-    };
-  }
-
   render() {
+    const client = new ApolloClient({
+      cache: new InMemoryCache(),
+      uri: "http://127.0.0.1:8000/graphql/",
+    });
     return (
       <div>
-        <h3>Dashboard</h3>
-        <Actors />
+        <ApolloProvider client={client}>
+          <h1>Dashboard</h1>
+          <Actors />
+        </ApolloProvider>
       </div>
     );
   }

@@ -33,6 +33,11 @@
   * Add `graphene_django` into installed apps in project
 
 
+### Apollo-React-Graphql
+* **Setting up apollo**
+  * Install `npm install @apollo/client` and `npm install graphql`
+
+
 ### Postgres
 * **Setting up postgres**
   * Install postgres `pip3 install psycopg2 psycopg2-binary postgresql`
